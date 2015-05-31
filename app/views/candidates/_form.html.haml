@@ -1,37 +1,21 @@
-= form_for @candidate do |f|
-  - if @candidate.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@candidate.errors.count, "error")} prohibited this candidate from being saved:"
-      %ul
-        - @candidate.errors.full_messages.each do |msg|
-          %li= msg
-
+= simple_form_for @candidate do |f|
   .field
-    = f.label :name
-    = f.text_field :name
+    = f.input :name
   .field
-    = f.label :email
-    = f.text_field :email
+    = f.input :email
   .field
-    = f.label :html_score
-    = f.text_field :html_score
+    = f.input :html_score
   .field
-    = f.label :css_score
-    = f.text_field :css_score
+    = f.input :css_score
   .field
-    = f.label :javascript_score
-    = f.text_field :javascript_score
+    = f.input :javascript_score
   .field
-    = f.label :python_score
-    = f.text_field :python_score
+    = f.input :python_score
   .field
-    = f.label :django_score
-    = f.text_field :django_score
+    = f.input :django_score
   .field
-    = f.label :ios_score
-    = f.text_field :ios_score
+    = f.input :ios_score
   .field
-    = f.label :android_score
-    = f.text_field :android_score
+    = f.input :android_score
   .actions
-    = f.submit 'Save'
+    = f.button :submit
