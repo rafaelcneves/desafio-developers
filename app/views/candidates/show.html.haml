@@ -1,0 +1,33 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @candidate.name
+%p
+  %b Email:
+  = @candidate.email
+%p
+  %b Html score:
+  = @candidate.html_score
+%p
+  %b Css score:
+  = @candidate.css_score
+%p
+  %b Javascript score:
+  = @candidate.javascript_score
+%p
+  %b Python score:
+  = @candidate.python_score
+%p
+  %b Django score:
+  = @candidate.django_score
+%p
+  %b Ios score:
+  = @candidate.ios_score
+%p
+  %b Android score:
+  = @candidate.android_score
+
+= link_to 'Edit', edit_candidate_path(@candidate)
+\|
+= link_to 'Back', candidates_path

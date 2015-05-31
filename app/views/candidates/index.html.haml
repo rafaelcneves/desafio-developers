@@ -1,0 +1,37 @@
+%h1 Listing candidates
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th Email
+      %th Html score
+      %th Css score
+      %th Javascript score
+      %th Python score
+      %th Django score
+      %th Ios score
+      %th Android score
+      %th
+      %th
+      %th
+
+  %tbody
+    - @candidates.each do |candidate|
+      %tr
+        %td= candidate.name
+        %td= candidate.email
+        %td= candidate.html_score
+        %td= candidate.css_score
+        %td= candidate.javascript_score
+        %td= candidate.python_score
+        %td= candidate.django_score
+        %td= candidate.ios_score
+        %td= candidate.android_score
+        %td= link_to 'Show', candidate
+        %td= link_to 'Edit', edit_candidate_path(candidate)
+        %td= link_to 'Destroy', candidate, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Candidate', new_candidate_path
