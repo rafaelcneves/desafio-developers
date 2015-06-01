@@ -13,7 +13,7 @@ class CandidatesController < ApplicationController
 
     respond_to do |format|
       if @candidate.save
-        format.html { redirect_to @candidate, notice: 'Candidate was successfully created.' }
+        format.html { redirect_to @candidate, notice: I18n.t("candidate.successful") }
       else
         format.html { render :new }
       end

@@ -10,3 +10,5 @@ en:
       back_end: "Thank you for applying, so we have a place available for Back End Developer will contact you."
       mobile: "Thank you for applying, so we have a place available for Mobile Developer will contact you."
       generic: "Thank you for applying, so we have a place available for programmer will contact you."
+  candidate:
+    successful: "Thank you for applying."
