@@ -1,28 +1,34 @@
-
-
-
-
 = simple_form_for @candidate, html: { class: "panel panel-default" } do |f|
   .panel-heading
-    Novo candidato
+    %h1= I18n.t("simple_form.titles.candidate.#{params[:action]}")
+
   .panel-body
-    .field
-      = f.input :name
-    .field
-      = f.input :email
-    .field
-      = f.input :html_score
-    .field
-      = f.input :css_score
-    .field
-      = f.input :javascript_score
-    .field
-      = f.input :python_score
-    .field
-      = f.input :django_score
-    .field
-      = f.input :ios_score
-    .field
-      = f.input :android_score
+    .panel.panel-default
+      .panel-heading
+        = I18n.t("simple_form.titles.candidate.candidate_info")
+      .panel-body
+        .field
+          = f.input :name
+        .field
+          = f.input :email
+    .panel.panel-default
+      .panel-heading
+        = I18n.t("simple_form.titles.candidate.knowledges")
+      .panel-body
+        .field
+          = f.input :html_score
+        .field
+          = f.input :css_score
+        .field
+          = f.input :javascript_score
+        .field
+          = f.input :python_score
+        .field
+          = f.input :django_score
+        .field
+          = f.input :ios_score
+        .field
+          = f.input :android_score
+
   .panel-footer.actions
     = f.button :submit

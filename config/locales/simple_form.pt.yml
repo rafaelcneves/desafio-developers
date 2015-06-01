@@ -1,15 +1,37 @@
-en:
+pt:
   simple_form:
-    "yes": 'Yes'
-    "no": 'No'
+    "yes": 'Sim'
+    "no": 'Não'
     required:
-      text: 'required'
+      text: 'requerido'
       mark: '*'
       # You can uncomment the line below if you need to overwrite the whole required html.
       # When using html, text and mark won't be used.
       # html: '<abbr title="required">*</abbr>'
     error_notification:
-      default_message: "Please review the problems below:"
+      default_message: "Por favor reveja os itens abaixo:"
+    labels:
+      candidate:
+        name: "Nome"
+        email: "Email"
+        html_score: "HTML"
+        css_score: "CSS"
+        javascript_score: "Javascript"
+        python_score: "Python"
+        django_score: "Django"
+        ios_score: "Desenvolvimento iOS"
+        android_score: "Desenvolvimento Android"
+    titles:
+      candidate:
+        new: "Novo candidato"
+        edit: "Editar candidato"
+        candidate_info: "Dados do candidato"
+        knowledges: "Conhecimentos (Avalie seu conhecimento de 0 a 10 nos seguintes itens)"
+  helpers:
+    submit:
+      candidate:
+        create: "Candidatar-se"
+        update: "Salvar alterações"
     # Examples
     # labels:
     #   defaults:

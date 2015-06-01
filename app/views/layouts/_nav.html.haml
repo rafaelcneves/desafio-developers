@@ -1,10 +1,10 @@
 %nav.navbar.navbar-inverse.navbar-fixed-top
   .container
     .navbar-header
-      %a.navbar-brand{:href => "#"} Developers
+      %a.navbar-brand{:href => "#"}= I18n.t(:app_title)
     #navbar.collapse.navbar-collapse
       %ul.nav.navbar-nav.navbar-right
         %li
-          %a{:href => "https://github.com/rafaelcneves/developers", :target => "_blank"} Código Fonte
+          %a{:href => "https://github.com/rafaelcneves/developers", :target => "_blank"}= I18n.t("nav.source_code")
         %li
-          %a{:href => "mailto: rneves@rocketmail.com"} Contato
+          %a{:href => "mailto: rneves@rocketmail.com"}= I18n.t("nav.contact")

@@ -10,6 +10,28 @@ en:
       # html: '<abbr title="required">*</abbr>'
     error_notification:
       default_message: "Please review the problems below:"
+    labels:
+      candidate:
+        name: "Name"
+        email: "Email"
+        html_score: "HTML"
+        css_score: "CSS"
+        javascript_score: "Javascript"
+        python_score: "Python"
+        django_score: "Django"
+        ios_score: "iOS Development"
+        android_score: "Android Development"
+    titles:
+      candidate:
+        new: "New candidate"
+        edit: "Edit candidate"
+        candidate_info: "Candidate info"
+        knowledges: "Knowledges (Evaluate your knowledge 0-10 in the following items)"
+  helpers:
+    submit:
+      candidate:
+        create: "Subscribe"
+        update: "Save Changes"
     # Examples
     # labels:
     #   defaults:
