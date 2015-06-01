@@ -1,21 +1,28 @@
-= simple_form_for @candidate do |f|
-  .field
-    = f.input :name
-  .field
-    = f.input :email
-  .field
-    = f.input :html_score
-  .field
-    = f.input :css_score
-  .field
-    = f.input :javascript_score
-  .field
-    = f.input :python_score
-  .field
-    = f.input :django_score
-  .field
-    = f.input :ios_score
-  .field
-    = f.input :android_score
-  .actions
+
+
+
+
+= simple_form_for @candidate, html: { class: "panel panel-default" } do |f|
+  .panel-heading
+    Novo candidato
+  .panel-body
+    .field
+      = f.input :name
+    .field
+      = f.input :email
+    .field
+      = f.input :html_score
+    .field
+      = f.input :css_score
+    .field
+      = f.input :javascript_score
+    .field
+      = f.input :python_score
+    .field
+      = f.input :django_score
+    .field
+      = f.input :ios_score
+    .field
+      = f.input :android_score
+  .panel-footer.actions
     = f.button :submit
