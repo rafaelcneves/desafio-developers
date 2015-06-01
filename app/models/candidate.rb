@@ -13,7 +13,7 @@ class Candidate < ActiveRecord::Base
     mails << "generic" if mails.blank?
 
     mails.each do |mail|
-      CandidateMailer.try("#{mail}_mail", self).deliver
+      CandidateMailer.try("#{mail}_mail", self).deliver_now
     end
   end
 end

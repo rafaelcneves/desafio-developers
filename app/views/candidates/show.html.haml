@@ -1,27 +1,48 @@
-%p
-  %b Name:
-  = @candidate.name
-%p
-  %b Email:
-  = @candidate.email
-%p
-  %b Html score:
-  = @candidate.html_score
-%p
-  %b Css score:
-  = @candidate.css_score
-%p
-  %b Javascript score:
-  = @candidate.javascript_score
-%p
-  %b Python score:
-  = @candidate.python_score
-%p
-  %b Django score:
-  = @candidate.django_score
-%p
-  %b Ios score:
-  = @candidate.ios_score
-%p
-  %b Android score:
-  = @candidate.android_score
+.row
+  .col-lg-12
+    .panel.panel-default
+      .panel-heading
+        = I18n.t("simple_form.titles.candidate.candidate_info")
+      .panel-body
+        .row
+          .col-xs-6.field
+            %p
+              %b Name:
+              = @candidate.name
+          .col-xs-6.field
+            %p
+              %b Email:
+              = @candidate.email
+    .panel.panel-default
+      .panel-heading
+        = I18n.t("simple_form.titles.candidate.knowledges")
+      .panel-body
+        .row
+          .col-xs-3.field
+            %p
+              %b Html score:
+              = @candidate.html_score
+          .col-xs-3.field
+            %p
+              %b Css score:
+              = @candidate.css_score
+          .col-xs-3.field
+            %p
+              %b Javascript score:
+              = @candidate.javascript_score
+          .col-xs-3.field
+            %p
+              %b Python score:
+              = @candidate.python_score
+          .col-xs-3.field
+            %p
+              %b Django score:
+              = @candidate.django_score
+          .col-xs-3.field
+            %p
+              %b Ios score:
+              = @candidate.ios_score
+          .col-xs-3.field
+            %p
+              %b Android score:
+              = @candidate.android_score
