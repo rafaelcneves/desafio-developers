@@ -25,7 +25,6 @@
             = f.input :javascript_score, input_html: { min: 0, max: 10 }
           .col-xs-3.field
             = f.input :python_score, input_html: { min: 0, max: 10 }
-        .row
           .col-xs-3.field
             = f.input :django_score, input_html: { min: 0, max: 10 }
           .col-xs-3.field
@@ -34,4 +33,4 @@
             = f.input :android_score, input_html: { min: 0, max: 10 }
 
   .panel-footer.actions
-    = f.button :submit
+    = f.button :submit, class: "btn-lg btn-success"

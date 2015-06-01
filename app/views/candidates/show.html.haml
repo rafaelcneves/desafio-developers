@@ -1,5 +1,3 @@
-%p#notice= notice
-
 %p
   %b Name:
   = @candidate.name
@@ -27,7 +25,3 @@
 %p
   %b Android score:
   = @candidate.android_score
-
-= link_to 'Edit', edit_candidate_path(@candidate)
-\|
-= link_to 'Back', candidates_path

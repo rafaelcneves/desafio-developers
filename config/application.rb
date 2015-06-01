@@ -22,5 +22,8 @@ module Developers
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.smtp_settings = YAML.load_file(Rails.root.join('config', 'smtp.yml')).symbolize_keys
   end
 end

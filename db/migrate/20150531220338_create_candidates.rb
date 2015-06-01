@@ -3,13 +3,13 @@ class CreateCandidates < ActiveRecord::Migration
     create_table :candidates do |t|
       t.string :name
       t.string :email
-      t.float :html_score
-      t.float :css_score
-      t.float :javascript_score
-      t.float :python_score
-      t.float :django_score
-      t.float :ios_score
-      t.float :android_score
+      t.integer :html_score
+      t.integer :css_score
+      t.integer :javascript_score
+      t.integer :python_score
+      t.integer :django_score
+      t.integer :ios_score
+      t.integer :android_score
 
       t.timestamps null: false
     end

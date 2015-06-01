@@ -3,3 +3,10 @@ pt:
   nav:
     source_code: "Código fonte"
     contact: "Contato"
+  mail:
+    subject: "Obrigado por se candidatar"
+    message:
+      front_end: "Obrigado por se candidatar, assim que tivermos uma vaga disponível para programador Front-End entraremos em contato."
+      back_end: "Obrigado por se candidatar, assim que tivermos uma vaga disponível para programador Back-End entraremos em contato."
+      mobile: "Obrigado por se candidatar, assim que tivermos uma vaga disponível para programador Mobile entraremos em contato."
+      generic: "Obrigado por se candidatar, assim que tivermos uma vaga disponível para programador entraremos em contato."

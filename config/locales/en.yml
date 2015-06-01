@@ -3,3 +3,10 @@ en:
   nav:
     source_code: "Source code"
     contact: "Contact"
+  mail:
+    subject: "Thank you for applying"
+    message:
+      front_end: "Thank you for applying, so we have a place available for Front End Developer will contact you."
+      back_end: "Thank you for applying, so we have a place available for Back End Developer will contact you."
+      mobile: "Thank you for applying, so we have a place available for Mobile Developer will contact you."
+      generic: "Thank you for applying, so we have a place available for programmer will contact you."
