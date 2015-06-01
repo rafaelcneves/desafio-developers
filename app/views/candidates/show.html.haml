@@ -7,11 +7,11 @@
         .row
           .col-xs-6.field
             %p
-              %b Name:
+              %b= I18n.t("simple_form.labels.candidate.name") + ":"
               = @candidate.name
           .col-xs-6.field
             %p
-              %b Email:
+              %b= I18n.t("simple_form.labels.candidate.email") + ":"
               = @candidate.email
     .panel.panel-default
       .panel-heading
@@ -20,29 +20,29 @@
         .row
           .col-xs-3.field
             %p
-              %b Html score:
+              %b= I18n.t("simple_form.labels.candidate.html_score") + ":"
               = @candidate.html_score
           .col-xs-3.field
             %p
-              %b Css score:
+              %b= I18n.t("simple_form.labels.candidate.css_score") + ":"
               = @candidate.css_score
           .col-xs-3.field
             %p
-              %b Javascript score:
+              %b= I18n.t("simple_form.labels.candidate.javascript_score") + ":"
               = @candidate.javascript_score
           .col-xs-3.field
             %p
-              %b Python score:
+              %b= I18n.t("simple_form.labels.candidate.python_score") + ":"
               = @candidate.python_score
           .col-xs-3.field
             %p
-              %b Django score:
+              %b= I18n.t("simple_form.labels.candidate.django_score") + ":"
               = @candidate.django_score
           .col-xs-3.field
             %p
-              %b Ios score:
+              %b= I18n.t("simple_form.labels.candidate.ios_score") + ":"
               = @candidate.ios_score
           .col-xs-3.field
             %p
-              %b Android score:
+              %b= I18n.t("simple_form.labels.candidate.android_score") + ":"
               = @candidate.android_score
