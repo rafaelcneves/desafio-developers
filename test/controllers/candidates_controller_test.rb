@@ -5,12 +5,6 @@ class CandidatesControllerTest < ActionController::TestCase
     @candidate = candidates(:one)
   end
 
-  test "should get index" do
-    get :index
-    assert_response :success
-    assert_not_nil assigns(:candidates)
-  end
-
   test "should get new" do
     get :new
     assert_response :success
@@ -29,21 +23,4 @@ class CandidatesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should get edit" do
-    get :edit, id: @candidate
-    assert_response :success
-  end
-
-  test "should update candidate" do
-    patch :update, id: @candidate, candidate: { android_score: @candidate.android_score, css_score: @candidate.css_score, django_score: @candidate.django_score, email: @candidate.email, html_score: @candidate.html_score, ios_score: @candidate.ios_score, javascript_score: @candidate.javascript_score, name: @candidate.name, python_score: @candidate.python_score }
-    assert_redirected_to candidate_path(assigns(:candidate))
-  end
-
-  test "should destroy candidate" do
-    assert_difference('Candidate.count', -1) do
-      delete :destroy, id: @candidate
-    end
-
-    assert_redirected_to candidates_path
-  end
 end
