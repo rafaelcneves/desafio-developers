@@ -13,7 +13,7 @@ class CandidatesController < ApplicationController
 
     respond_to do |format|
       if @candidate.save
-        SendMailsWorker.perform_async(@candidate.id)
+        send_emails
         format.html { redirect_to @candidate, notice: I18n.t("candidate.successful") }
       else
         format.html { render :new }
@@ -32,15 +32,15 @@ class CandidatesController < ApplicationController
       params.require(:candidate).permit(:name, :email, :html_score, :css_score, :javascript_score, :python_score, :django_score, :ios_score, :android_score)
     end
 
-    # def send_emails
-    #   mails = []
-    #   mails << "front_end" if @candidate.front_end?
-    #   mails << "back_end" if @candidate.back_end?
-    #   mails << "mobile" if @candidate.mobile?
-    #   mails << "generic" if mails.blank?
-    #
-    #   mails.each do |mail|
-    #     CandidateMailer.try(mail, @candidate).deliver_now
-    #   end
-    # end
+    def send_emails
+      mails = []
+      mails << "front_end" if @candidate.front_end?
+      mails << "back_end" if @candidate.back_end?
+      mails << "mobile" if @candidate.mobile?
+      mails << "generic" if mails.blank?
+
+      mails.each do |mail|
+        CandidateMailer.try(mail, @candidate).deliver_now
+      end
+    end
 end
