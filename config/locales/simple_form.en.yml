@@ -21,7 +21,6 @@ en:
     titles:
       candidate:
         new: "New candidate"
-        edit: "Edit candidate"
         candidate_info: "Candidate info"
         knowledges: "Knowledges (Evaluate your knowledge 0-10 in the following items)"
   helpers:

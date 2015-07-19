@@ -1,5 +1,5 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: "dev@developers.com"
+  default from: "rafael@nevesbox.com"
   layout 'mailer'
 
   before_action :set_locale

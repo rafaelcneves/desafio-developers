@@ -1,17 +1,17 @@
 class CandidateMailer < ApplicationMailer
-  def front_end_mail(candidate)
+  def front_end(candidate)
     mail(to: candidate.email, subject: I18n.t("mail.subject"))
   end
 
-  def back_end_mail(candidate)
+  def back_end(candidate)
     mail(to: candidate.email, subject: I18n.t("mail.subject"))
   end
 
-  def mobile_mail(candidate)
+  def mobile(candidate)
     mail(to: candidate.email, subject: I18n.t("mail.subject"))
   end
 
-  def generic_mail(candidate)
+  def generic(candidate)
     mail(to: candidate.email, subject: I18n.t("mail.subject"))
   end
 end

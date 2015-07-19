@@ -21,7 +21,6 @@ pt:
     titles:
       candidate:
         new: "Novo candidato"
-        edit: "Editar candidato"
         candidate_info: "Dados do candidato"
         knowledges: "Conhecimentos (Avalie seu conhecimento de 0 a 10 nos seguintes itens)"
   helpers:
