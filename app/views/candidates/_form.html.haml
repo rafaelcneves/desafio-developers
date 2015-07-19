@@ -8,29 +8,20 @@
         = I18n.t("simple_form.titles.candidate.candidate_info")
       .panel-body
         .row
-          .col-xs-6.field
+          .col-md-6.field
             = f.input :name
-          .col-xs-6.field
+          .col-md-6.field
             = f.input :email
     .panel.panel-default
       .panel-heading
         = I18n.t("simple_form.titles.candidate.knowledges")
       .panel-body
+        %blockquote
+          = I18n.t("simple_form.titles.candidate.knowledges_hint")
         .row
-          .col-xs-3.field
-            = f.input :html_score, input_html: { min: 0, max: 10 }
-          .col-xs-3.field
-            = f.input :css_score, input_html: { min: 0, max: 10 }
-          .col-xs-3.field
-            = f.input :javascript_score, input_html: { min: 0, max: 10 }
-          .col-xs-3.field
-            = f.input :python_score, input_html: { min: 0, max: 10 }
-          .col-xs-3.field
-            = f.input :django_score, input_html: { min: 0, max: 10 }
-          .col-xs-3.field
-            = f.input :ios_score, input_html: { min: 0, max: 10 }
-          .col-xs-3.field
-            = f.input :android_score, input_html: { min: 0, max: 10 }
+          - [:html_score, :css_score, :javascript_score, :python_score, :django_score, :ios_score, :android_score].each do |field|
+            .col-md-3.field
+              = f.input field, as: :select, collection: 0..10, input_html: { min: 0, max: 10 }, include_blank: false
 
   .panel-footer.actions
     = f.button :submit, class: "btn-lg btn-success"

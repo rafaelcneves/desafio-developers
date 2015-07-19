@@ -22,7 +22,8 @@ pt:
       candidate:
         new: "Novo candidato"
         candidate_info: "Dados do candidato"
-        knowledges: "Conhecimentos (Avalie seu conhecimento de 0 a 10 nos seguintes itens)"
+        knowledges: "Conhecimentos"
+        knowledges_hint: "Avalie seu conhecimento de 0 a 10 nos seguintes itens"
   helpers:
     submit:
       candidate:
