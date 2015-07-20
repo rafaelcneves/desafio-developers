@@ -20,8 +20,8 @@ pt:
         android_score: "Desenvolvimento Android"
     titles:
       candidate:
-        new: "Novo candidato"
-        candidate_info: "Dados do candidato"
+        new: "Trabalhe Conosco"
+        candidate_info: "Dados para contato"
         knowledges: "Conhecimentos"
         knowledges_hint: "Avalie seu conhecimento de 0 a 10 nos seguintes itens"
   helpers:

@@ -20,8 +20,8 @@ en:
         android_score: "Android Development"
     titles:
       candidate:
-        new: "New candidate"
-        candidate_info: "Candidate info"
+        new: "Work With Us"
+        candidate_info: "Contact info"
         knowledges: "Knowledges"
         knowledges_hint: "(Evaluate your knowledge 0-10 in the following items)"
   helpers:
