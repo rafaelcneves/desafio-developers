@@ -1,23 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  email: user@example.com
-  html_score: 1.5
-  css_score: 1.5
-  javascript_score: 1.5
-  python_score: 1.5
-  django_score: 1.5
-  ios_score: 1.5
-  android_score: 1.5
-
-two:
-  name: MyString
-  email: user@example.com
-  html_score: 1.5
-  css_score: 1.5
-  javascript_score: 1.5
-  python_score: 1.5
-  django_score: 1.5
-  ios_score: 1.5
-  android_score: 1.5
+# This model initially had no columns defined. If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+one: {}
+# column: value
+#
+two: {}
+# column: value
