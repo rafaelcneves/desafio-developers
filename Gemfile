@@ -70,3 +70,9 @@ gem "simple_form", "~> 3.5"
 
 # Added at 2018-01-29 22:56:31 -0200 by rafael:
 gem "jquery-rails", "~> 4.3"
+
+# Added at 2018-01-30 20:06:52 -0200 by rafael:
+gem "rails-controller-testing", "~> 1.0", :group => [:test]
+
+# Added at 2018-01-30 20:30:41 -0200 by rafael:
+gem "simplecov", "~> 0.15.1", :group => [:test]
