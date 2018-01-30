@@ -22,23 +22,24 @@ class CandidatesController < ApplicationController
   end
 
   private
-    def set_candidate
-      @candidate = Candidate.find(params[:id])
-    end
 
-    def candidate_params
-      params.require(:candidate).permit(:name, :email, :html_score, :css_score, :javascript_score, :python_score, :django_score, :ios_score, :android_score)
-    end
+  def set_candidate
+    @candidate = Candidate.find(params[:id])
+  end
 
-    def send_emails
-      mails = []
-      mails << "front_end" if @candidate.front_end?
-      mails << "back_end" if @candidate.back_end?
-      mails << "mobile" if @candidate.mobile?
-      mails << "generic" if mails.blank?
+  def candidate_params
+    params.require(:candidate).permit(:name, :email, :html_score, :css_score, :javascript_score, :python_score, :django_score, :ios_score, :android_score)
+  end
 
-      mails.each do |mail|
-        CandidateMailer.try(mail, @candidate).deliver_now
-      end
+  def send_emails
+    mails = []
+    mails << "front_end" if @candidate.front_end?
+    mails << "back_end" if @candidate.back_end?
+    mails << "mobile" if @candidate.mobile?
+    mails << "generic" if mails.blank?
+
+    mails.each do |mail|
+      CandidateMailer.try(mail, @candidate).deliver_now
     end
+  end
 end

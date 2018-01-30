@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -11,23 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150531220338) do
+ActiveRecord::Schema.define(version: 20180129231909) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "candidates", force: :cascade do |t|
-    t.string   "name"
-    t.string   "email"
-    t.float    "html_score"
-    t.float    "css_score"
-    t.float    "javascript_score"
-    t.float    "python_score"
-    t.float    "django_score"
-    t.float    "ios_score"
-    t.float    "android_score"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.string "name"
+    t.string "email"
+    t.integer "html_score"
+    t.integer "css_score"
+    t.integer "javascript_score"
+    t.integer "python_score"
+    t.integer "django_score"
+    t.integer "ios_score"
+    t.integer "android_score"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

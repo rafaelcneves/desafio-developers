@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class CandidateTest < ActionController::TestCase
+class CandidateTest < ActiveSupport::TestCase
   test "should create" do
     @candidate = Candidate.new({name: "Testing case", email: "test@example.com"})
     assert @candidate.save
@@ -40,5 +40,4 @@ class CandidateTest < ActionController::TestCase
     @candidate.android_score = 7
     assert_equal true, @candidate.mobile?
   end
-
 end
